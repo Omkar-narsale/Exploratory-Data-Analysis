@@ -9,6 +9,7 @@ This repository contains multiple EDA notebooks and datasets, including:
 - 📱 Google Play Store Analysis
 - 🍷 Wine Quality Analysis
 - ✈️ Flight Price Analysis
+- 🚢 Titanic Dataset Analysis
 
 Each project follows the complete data analysis workflow:
 - Data Loading
