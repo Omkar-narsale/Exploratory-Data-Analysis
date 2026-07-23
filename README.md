@@ -1,161 +1,217 @@
 # 📊 Exploratory Data Analysis (EDA)
 
-A collection of Exploratory Data Analysis (EDA) projects using Python. This repository demonstrates data cleaning, preprocessing, visualization, and extracting meaningful insights from real-world datasets.
-
-## 🚀 Repository Overview
-
-This repository contains multiple EDA notebooks and datasets, including:
-
-- 📱 Google Play Store Analysis
-- 🍷 Wine Quality Analysis
-- ✈️ Flight Price Analysis
-- 🚢 Titanic Dataset Analysis
-
-Each project follows the complete data analysis workflow:
-- Data Loading
-- Data Cleaning
-- Handling Missing Values
-- Data Type Conversion
-- Feature Engineering
-- Univariate Analysis
-- Bivariate Analysis
-- Data Visualization
-- Business Insights
+A collection of Exploratory Data Analysis (EDA) projects built using **Python, Pandas, NumPy, Matplotlib, and Seaborn**. Each project focuses on cleaning real-world datasets, performing exploratory analysis, creating insightful visualizations, and extracting actionable business insights.
 
 ---
+
+# 🚀 Repository Overview
+
+This repository contains multiple EDA projects covering different domains such as entertainment, healthcare, transportation, mobile applications, and survival analysis.
 
 ## 📂 Repository Structure
 
 ```
 Exploratory-Data-Analysis/
 │
-├── EDA.ipynb
+├── Netflix_EDA.ipynb
+├── Titanic_EDA.ipynb
 ├── Google_Playstore_Analysis.ipynb
-├── googleplaystore.csv
-├── googleplaystore_cleaned.csv
-├── flight_price.xlsx
-├── winequality-red.csv
+├── Flight_Price_Analysis.ipynb
+├── Wine_Quality_Analysis.ipynb
+│
+├── datasets/
+│   ├── netflix_titles.csv
+│   ├── titanic.csv
+│   ├── googleplaystore.csv
+│   ├── flight_price.xlsx
+│   └── winequality-red.csv
+│
 └── README.md
 ```
 
 ---
 
-## 📱 Google Play Store Analysis
+# 📚 Projects Included
 
-### Objective
+---
 
-Perform exploratory data analysis on the Google Play Store dataset to understand app trends, ratings, installs, pricing, and categories.
+# 🎬 Netflix Dataset Analysis
 
-### Analysis Performed
+### 📌 Objective
+
+Analyze Netflix's content library to discover trends in Movies, TV Shows, genres, countries, actors, directors, and release patterns.
+
+### 🔍 Analysis Performed
+
+- Data Cleaning
+- Missing Value Handling
+- Datetime Feature Engineering
+- Movies vs TV Shows Analysis
+- Country-wise Analysis
+- Director Analysis
+- Cast Analysis
+- Rating Distribution
+- Year-wise Content Growth
+- Monthly Content Trends
+- Genre Analysis
+- Business Insights
+
+### 📈 Key Insights
+
+- 🎬 Movies dominate Netflix's content library.
+- 🇺🇸 United States contributes the highest number of Netflix titles.
+- 🇮🇳 India is the second-largest content producer.
+- 🎥 Rajiv Chilaka has the highest number of directed titles.
+- 🎭 Anupam Kher appears in the highest number of Netflix titles.
+- 📅 Netflix experienced rapid content growth between **2016–2020**.
+- 📺 TV Shows have grown significantly in recent years.
+
+---
+
+# 🚢 Titanic Dataset Analysis
+
+### 📌 Objective
+
+Analyze passenger demographics and identify the factors that influenced survival.
+
+### 🔍 Analysis Performed
+
+- Missing Value Handling
+- Passenger Class Analysis
+- Gender Analysis
+- Age Analysis
+- Embarkation Analysis
+- Survival Rate Analysis
+- Correlation Analysis
+
+### 📈 Key Insights
+
+- 👩 Female passengers had a much higher survival rate than males.
+- 🛳️ First-Class passengers survived more frequently than Third-Class passengers.
+- 🚢 Passengers boarding from **Cherbourg (C)** had the highest survival rate.
+- 👶 Children had a relatively higher chance of survival.
+- 💰 Higher ticket fares were associated with higher survival rates.
+
+---
+
+# 📱 Google Play Store Dataset Analysis
+
+### 📌 Objective
+
+Understand application trends, ratings, installs, pricing, and user engagement in the Google Play Store.
+
+### 🔍 Analysis Performed
 
 - Data Cleaning
 - Missing Value Handling
 - Duplicate Removal
 - Data Type Conversion
+- Category Analysis
 - Rating Distribution
-- App Categories Analysis
-- Most Installed Categories
-- Free vs Paid Apps
-- Content Rating Analysis
+- Install Analysis
 - Reviews Analysis
-- Size Analysis
-- Correlation Heatmap
-
-### Key Insights
-
-- Most apps are free.
-- Family and Game categories contain the highest number of applications.
-- Highly installed apps generally receive more reviews.
-- Paid apps represent only a small portion of the Play Store.
-- Most applications have ratings between 4.0 and 4.5.
-
----
-
-## ✈️ Flight Price Analysis
-
-### Objective
-
-Analyze airline ticket prices and identify factors affecting flight fares.
-
-### Analysis Includes
-
-- Airline Distribution
-- Source and Destination Analysis
-- Journey Date Analysis
-- Flight Duration
-- Stops Analysis
-- Airline vs Price
+- Free vs Paid Apps
 - Correlation Analysis
 
+### 📈 Key Insights
+
+- 📱 Most applications on Google Play Store are free.
+- 🎮 Family and Game categories contain the largest number of apps.
+- ⭐ Most applications have ratings between **4.0–4.5**.
+- 📈 Apps with more installs generally receive more reviews.
+- 💰 Paid apps represent only a small portion of the Play Store.
+
 ---
 
-## 🍷 Wine Quality Analysis
+# ✈️ Flight Price Dataset Analysis
 
-### Objective
+### 📌 Objective
 
-Explore wine quality based on chemical properties.
+Analyze airline ticket prices and identify factors affecting airfare.
 
-### Analysis Includes
+### 🔍 Analysis Performed
 
+- Airline Analysis
+- Source & Destination Analysis
+- Flight Duration Analysis
+- Stops Analysis
+- Journey Date Analysis
+- Price Distribution
+- Correlation Analysis
+
+### 📈 Key Insights
+
+- ✈️ Flight duration has a strong impact on ticket prices.
+- 🛫 Flights with more stops generally cost less than direct flights.
+- 📅 Ticket prices vary across different months and travel seasons.
+- 🏷️ Airline choice significantly influences airfare.
+
+---
+
+# 🍷 Wine Quality Dataset Analysis
+
+### 📌 Objective
+
+Analyze the relationship between chemical properties and wine quality.
+
+### 🔍 Analysis Performed
+
+- Data Cleaning
+- Feature Distribution
+- Correlation Analysis
 - Quality Distribution
 - Alcohol Analysis
 - Acidity Analysis
 - Density Analysis
-- Correlation Heatmap
-- Feature Relationships
+
+### 📈 Key Insights
+
+- 🍷 Higher alcohol content is positively associated with better wine quality.
+- 🧪 Certain acidity measures influence wine quality.
+- 📊 Most wines fall within the medium-quality range.
+- 🔥 Alcohol is one of the strongest predictors of wine quality.
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-
----
-
-## 📈 Libraries
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-```
+- 🐍 Python
+- 🐼 Pandas
+- 🔢 NumPy
+- 📊 Matplotlib
+- 📈 Seaborn
+- 📒 Jupyter Notebook
 
 ---
 
-## 📊 Sample Visualizations
+# 📊 Visualizations Used
 
-- Bar Charts
-- Histograms
-- Box Plots
-- Count Plots
-- Heatmaps
-- Pie Charts
-- Scatter Plots
-- Correlation Matrix
-
----
-
-## 🎯 Learning Outcomes
-
-Through these projects, I learned:
-
-- Data Cleaning Techniques
-- Handling Missing Values
-- Data Transformation
-- Feature Engineering
-- Statistical Analysis
-- Data Visualization
-- Business Insight Generation
+- 📊 Bar Charts
+- 📈 Line Charts
+- 📉 Histograms
+- 📦 Box Plots
+- 🥧 Pie Charts
+- 🎯 Scatter Plots
+- 🔥 Correlation Heatmaps
+- 📌 Count Plots
 
 ---
 
-## 💻 How to Run
+# 🎯 Skills Demonstrated
+
+- ✅ Data Cleaning
+- ✅ Handling Missing Values
+- ✅ Feature Engineering
+- ✅ Exploratory Data Analysis
+- ✅ Statistical Analysis
+- ✅ Data Visualization
+- ✅ Business Insight Generation
+- ✅ Trend Analysis
+- ✅ Correlation Analysis
+
+---
+
+# 💻 Getting Started
 
 Clone the repository
 
@@ -169,7 +225,7 @@ Navigate into the project
 cd Exploratory-Data-Analysis
 ```
 
-Install dependencies
+Install the required libraries
 
 ```bash
 pip install pandas numpy matplotlib seaborn openpyxl
@@ -183,18 +239,32 @@ jupyter notebook
 
 ---
 
-## 🤝 Contributions
+# ⭐ Future Additions
 
-Contributions, suggestions, and improvements are welcome!
+I continuously update this repository with new EDA projects, including:
 
-If you find this repository helpful, please consider giving it a ⭐.
+- 🏥 Healthcare Analysis
+- 🛒 E-commerce Sales Analysis
+- 🏦 Banking Customer Analysis
+- 🚗 Road Accident Analysis
+- 🏠 House Price Analysis
+- 👨‍💼 HR Analytics
+- 🏨 Hotel Booking Analysis
 
 ---
 
-## 👨‍💻 Author
+# 🤝 Contributions
 
-**Omkar Narsale**
+Contributions, suggestions, and improvements are always welcome.
 
-📧 Connect with me on LinkedIn
+If you found this repository useful, consider giving it a ⭐ to support the project.
+
+---
+
+# 👨‍💻 Author
+
+## **Omkar Narsale**
 
 🐙 GitHub: https://github.com/Omkar-narsale
+
+💼 LinkedIn: www.linkedin.com/in/omkar-narsale45
