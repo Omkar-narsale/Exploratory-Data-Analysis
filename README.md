@@ -6,13 +6,14 @@ A collection of Exploratory Data Analysis (EDA) projects built using **Python, P
 
 # 🚀 Repository Overview
 
-This repository contains multiple EDA projects covering different domains such as entertainment, healthcare, transportation, mobile applications, and survival analysis.
+This repository contains multiple EDA projects covering different domains such as retail, entertainment, healthcare, transportation, mobile applications, and survival analysis.
 
 ## 📂 Repository Structure
 
-```
+```text
 Exploratory-Data-Analysis/
 │
+├── Superstore_Sales_Analysis.ipynb
 ├── Netflix_EDA.ipynb
 ├── Titanic_EDA.ipynb
 ├── Google_Playstore_Analysis.ipynb
@@ -20,6 +21,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── Sample-Superstore.csv
 │   ├── netflix_titles.csv
 │   ├── titanic.csv
 │   ├── googleplaystore.csv
@@ -32,6 +34,41 @@ Exploratory-Data-Analysis/
 ---
 
 # 📚 Projects Included
+
+---
+
+# 🛒 Superstore Sales Analysis
+
+### 📌 Objective
+
+Analyze retail sales data to identify sales trends, profitable regions, customer purchasing behavior, product performance, and business opportunities.
+
+### 🔍 Analysis Performed
+
+- Data Cleaning
+- Datetime Feature Engineering
+- Region-wise Sales Analysis
+- Category & Sub-Category Analysis
+- Customer Segment Analysis
+- City-wise Sales Analysis
+- Shipping Mode Analysis
+- Customer Sales Analysis
+- Product Demand Analysis
+- Sales Trend Analysis
+- Profit Analysis
+- Business Insights
+
+### 📈 Key Insights
+
+- 🌎 West region generated the highest sales and accounted for the highest proportion of total orders.
+- 💰 West was the strongest-performing region, while South showed the lowest sales and customer activity.
+- 👥 Consumer customers generated the highest revenue among all customer segments.
+- 💻 Technology products consistently performed well across customer segments.
+- 🏙️ New York City generated the highest total sales, followed by Los Angeles.
+- 🚚 Nearly **60%** of all orders were shipped using **Standard Class**, making it the preferred shipping method.
+- 🤝 A small group of customers contributed a significant share of total sales, highlighting the importance of customer retention.
+- 📦 Binders, Paper, Phones, and Storage were among the highest-demand sub-categories, particularly in the West region.
+- 📈 Sales showed steady growth from **2014 to 2017**, with 2018 requiring validation due to partial-year data.
 
 ---
 
@@ -200,6 +237,7 @@ Analyze the relationship between chemical properties and wine quality.
 # 🎯 Skills Demonstrated
 
 - ✅ Data Cleaning
+- ✅ Data Preprocessing
 - ✅ Handling Missing Values
 - ✅ Feature Engineering
 - ✅ Exploratory Data Analysis
@@ -207,6 +245,8 @@ Analyze the relationship between chemical properties and wine quality.
 - ✅ Data Visualization
 - ✅ Business Insight Generation
 - ✅ Trend Analysis
+- ✅ Customer Segmentation
+- ✅ Profitability Analysis
 - ✅ Correlation Analysis
 
 ---
@@ -244,12 +284,12 @@ jupyter notebook
 I continuously update this repository with new EDA projects, including:
 
 - 🏥 Healthcare Analysis
-- 🛒 E-commerce Sales Analysis
 - 🏦 Banking Customer Analysis
 - 🚗 Road Accident Analysis
 - 🏠 House Price Analysis
 - 👨‍💼 HR Analytics
 - 🏨 Hotel Booking Analysis
+- 🛍️ Amazon Sales Analysis
 
 ---
 
@@ -267,4 +307,4 @@ If you found this repository useful, consider giving it a ⭐ to support the pro
 
 🐙 GitHub: https://github.com/Omkar-narsale
 
-💼 LinkedIn: www.linkedin.com/in/omkar-narsale45
+💼 LinkedIn: https://www.linkedin.com/in/omkar-narsale45
