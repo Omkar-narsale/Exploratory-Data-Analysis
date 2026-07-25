@@ -13,6 +13,7 @@ This repository contains multiple EDA projects covering different domains such a
 ```text
 Exploratory-Data-Analysis/
 │
+├── HR_Analytics_Job_Change_Analysis.ipynb
 ├── Superstore_Sales_Analysis.ipynb
 ├── Netflix_EDA.ipynb
 ├── Titanic_EDA.ipynb
@@ -21,6 +22,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── aug_train.csv
 │   ├── Sample-Superstore.csv
 │   ├── netflix_titles.csv
 │   ├── titanic.csv
@@ -36,7 +38,43 @@ Exploratory-Data-Analysis/
 # 📚 Projects Included
 
 ---
+---
 
+# 👨‍💼 HR Analytics – Job Change Prediction Analysis
+
+### 📌 Objective
+
+Analyze employee demographics, education, work experience, company characteristics, and training information to identify the factors associated with job change behavior after completing training and generate actionable HR insights.
+
+### 🔍 Analysis Performed
+
+- Data Cleaning & Missing Value Handling
+- Feature Engineering
+- Target Variable Mapping (Stay vs Leave)
+- Education Level Analysis
+- Major Discipline Analysis
+- Work Experience Analysis
+- Relevant Experience Analysis
+- Company Type Analysis
+- Company Size Analysis
+- City Development Index Analysis
+- Training Hours Analysis
+- Correlation Analysis
+- Business Insights & Recommendations
+
+### 📈 Key Insights
+
+- 🎓 Candidates with **Graduate** degrees exhibited the highest job-change rate compared to other education levels.
+- 💻 **STEM** candidates accounted for the largest proportion of employees likely to change jobs after training.
+- 💼 Employees with **less work experience** showed a higher tendency to seek new job opportunities.
+- ✅ Candidates **without relevant work experience** had a significantly higher leave rate than those with relevant industry experience.
+- 🏢 Employees working in **small organizations (10–49 employees)** were more likely to change jobs than those employed in larger organizations.
+- 🚀 Candidates from **Early Stage Startups** demonstrated a relatively higher likelihood of changing jobs.
+- 🌍 Employees from **less-developed cities** showed higher job mobility, while candidates from highly developed cities had better retention rates.
+- 📚 **Training hours** showed only a weak relationship with job-change behavior, indicating that employee retention depends more on experience and organizational factors than training duration alone.
+- 📊 Correlation analysis revealed that **City Development Index** and **Experience** were negatively associated with employee job changes, while **Training Hours** showed almost no correlation with the target variable.
+
+---
 # 🛒 Superstore Sales Analysis
 
 ### 📌 Objective
@@ -285,7 +323,6 @@ I continuously update this repository with new EDA projects, including:
 
 - 🏥 Healthcare Analysis
 - 🏦 Banking Customer Analysis
-- 🚗 Road Accident Analysis
 - 🏠 House Price Analysis
 - 👨‍💼 HR Analytics
 - 🏨 Hotel Booking Analysis
