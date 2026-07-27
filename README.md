@@ -38,8 +38,40 @@ Exploratory-Data-Analysis/
 # 📚 Projects Included
 
 ---
+# 🏨 Hotel Booking Cancellation Analysis
+---
+## 📌 Objective
+
+Analyze hotel booking data to identify the key factors influencing booking cancellations and customer behavior. The goal is to uncover actionable business insights that help improve demand forecasting, optimize booking strategies, enhance customer retention, and reduce cancellation rates.
+
 ---
 
+## 🔍 Analysis Performed
+
+- Data Cleaning & Missing Value Handling
+- Removed the `company` column (94% missing values)
+- Replaced missing values in the `country` column with **"Unknown"**
+- Duplicate Value Check
+- Hotel Type Analysis (City Hotel vs Resort Hotel)
+- Lead Time vs Booking Cancellation Analysis
+- Monthly Cancellation Rate Analysis
+- Special Requests vs Booking Cancellation
+- Top Booking Countries Analysis
+- Market Segment vs Booking Cancellation
+- Repeated Guest vs Booking Cancellation
+- Business Insight Generation
+
+---
+
+## 📈 Key Insights
+
+- **Longer lead times** were associated with significantly higher booking cancellation rates.
+- **City Hotels** consistently recorded higher cancellation rates than Resort Hotels throughout the year.
+- Guests with **more special requests** were much less likely to cancel their bookings, indicating stronger booking commitment.
+- A large proportion of bookings originated from a **small number of countries**, making them key customer markets for hotels.
+- **Group bookings** showed the highest cancellation rates, whereas **Direct** and **Corporate** bookings were the most reliable.
+- **Repeated guests** had substantially lower cancellation rates than first-time guests, highlighting the importance of customer loyalty in reducing cancellations.
+- Hotels can improve operational planning by focusing on **high-risk booking segments**, encouraging **direct bookings**, and strengthening **customer retention strategies**.
 # 👨‍💼 HR Analytics – Job Change Prediction Analysis
 
 ### 📌 Objective
@@ -324,8 +356,6 @@ I continuously update this repository with new EDA projects, including:
 - 🏥 Healthcare Analysis
 - 🏦 Banking Customer Analysis
 - 🏠 House Price Analysis
-- 👨‍💼 HR Analytics
-- 🏨 Hotel Booking Analysis
 - 🛍️ Amazon Sales Analysis
 
 ---
