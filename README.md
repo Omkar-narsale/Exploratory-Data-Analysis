@@ -13,6 +13,8 @@ This repository contains multiple EDA projects covering different domains such a
 ```text
 Exploratory-Data-Analysis/
 │
+├── Hotel_Booking_Cancellation_Analysis.ipynb
+├── Bank_Customer_Churn_Analysis.ipynb
 ├── HR_Analytics_Job_Change_Analysis.ipynb
 ├── Superstore_Sales_Analysis.ipynb
 ├── Netflix_EDA.ipynb
@@ -22,6 +24,8 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── hotel_bookings.csv
+│   ├── Bank_Churn.csv
 │   ├── aug_train.csv
 │   ├── Sample-Superstore.csv
 │   ├── netflix_titles.csv
@@ -37,6 +41,41 @@ Exploratory-Data-Analysis/
 
 # 📚 Projects Included
 
+# 🏦 Bank Customer Churn Analysis
+
+## 🎯 Objective
+
+The objective of this project is to perform **Exploratory Data Analysis (EDA)** on the **Bank Customer Churn** dataset to identify the key factors influencing customer attrition. The analysis aims to uncover patterns in customer behavior, evaluate relationships between different features and customer churn, and generate actionable business insights that can help the bank improve customer retention and reduce churn.
+
+---
+
+## 📊 Analysis Performed
+
+- Performed data understanding and dataset inspection.
+- Checked for missing values and duplicate records.
+- Generated summary statistics for numerical features.
+- Conducted **Univariate Analysis** to understand the distribution of customer demographics and banking attributes.
+- Conducted **Bivariate Analysis** to examine relationships between customer churn and important features such as:
+  - Geography vs Customer Churn
+  - Geography vs Complaint Rate
+  - Active Member vs Customer Churn
+  - Active Member vs Complaint Rate
+  - Age Group vs Customer Churn
+  - Number of Products vs Customer Churn
+- Performed **Multivariate Analysis** using a correlation heatmap to identify relationships among numerical variables.
+- Derived business-focused insights and recommendations based on the findings.
+
+---
+
+## 💡 Key Insights
+
+- Germany recorded the highest customer churn rate among all geographical regions.
+- Germany also had the highest complaint rate, indicating potential service quality issues.
+- Inactive customers were significantly more likely to churn than active customers.
+- Customers who were inactive also reported more complaints.
+- Customers aged **51–60 years** showed the highest likelihood of leaving the bank.
+- Customers with **two banking products** demonstrated the strongest customer retention, while churn increased considerably for customers with three or more products.
+- The correlation analysis showed that **Age**, **Complaint**, and **Active Membership** were the most influential factors associated with customer churn, whereas credit score, salary, tenure, and card type had relatively weak relationships.
 ---
 # 🏨 Hotel Booking Cancellation Analysis
 ---
