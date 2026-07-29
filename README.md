@@ -13,6 +13,7 @@ This repository contains multiple EDA projects covering different domains such a
 ```text
 Exploratory-Data-Analysis/
 │
+├── German_Credit_Risk_Analysis.ipynb
 ├── Hotel_Booking_Cancellation_Analysis.ipynb
 ├── Bank_Customer_Churn_Analysis.ipynb
 ├── HR_Analytics_Job_Change_Analysis.ipynb
@@ -24,6 +25,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── german_credit_data.csv
 │   ├── hotel_bookings.csv
 │   ├── Bank_Churn.csv
 │   ├── aug_train.csv
@@ -36,11 +38,51 @@ Exploratory-Data-Analysis/
 │
 └── README.md
 ```
-
 ---
 
 # 📚 Projects Included
 
+# 📊 German Credit Risk Analysis
+
+## 🎯 Objective
+
+The objective of this project is to perform **Exploratory Data Analysis (EDA)** on the **German Credit Risk** dataset to identify the key factors influencing customer credit risk. The analysis aims to uncover patterns in customer demographics, financial behavior, loan characteristics, and account information to generate actionable business insights that can help financial institutions make informed lending decisions and minimize the risk of loan defaults.
+
+---
+
+## 📊 Analysis Performed
+
+- Performed data understanding and dataset inspection.
+- Removed the unnecessary **Unnamed: 0** index column.
+- Checked for missing values, duplicate records, and data types.
+- Generated summary statistics for numerical features.
+- Created an **Age Group** feature using binning for better demographic analysis.
+- Conducted **Univariate Analysis** to understand the distribution of customer demographics, loan characteristics, account information, and credit risk.
+- Conducted **Bivariate Analysis** to examine relationships between credit risk and key variables, including:
+  - Age Group vs Credit Risk
+  - Checking Account vs Credit Risk
+  - Gender vs Credit Risk
+  - Loan Purpose vs Credit Risk
+  - Credit Amount Group vs Credit Risk
+- Performed supporting analyses to validate business hypotheses using:
+  - Age Group vs Credit Amount & Loan Duration
+  - Gender vs Credit Amount
+  - Loan Purpose vs Credit Amount
+  - Credit Amount Group vs Loan Duration
+- Performed **Multivariate Analysis** using a correlation heatmap to identify relationships among numerical variables.
+- Derived business-focused insights and recommendations based on the findings.
+
+---
+
+## 💡 Key Insights
+
+- Customers aged **18–30** exhibited the highest proportion of **bad credit risk**, although this pattern could not be explained solely by larger loan amounts or longer repayment durations.
+- Customers with **moderate checking account balances** recorded the highest bad credit risk, while customers with **rich checking account balances** showed the lowest.
+- **Female customers** demonstrated a higher percentage of bad credit risk than male customers; however, this difference was not explained by larger loan amounts, suggesting that additional financial factors contribute to the observed pattern.
+- Loans taken for **Vacation/Others** had the **highest bad credit risk (41.7%)** and were also associated with the **highest average credit amount**, indicating that larger discretionary loans may carry greater repayment risk.
+- Customers requesting loans above **8K** showed the **highest bad credit risk (54.3%)**. Supporting analysis revealed that these loans were also associated with **longer repayment durations**, increasing the financial burden on borrowers.
+- The correlation analysis showed a **strong positive relationship between Credit Amount and Loan Duration (0.62)**, while **Loan Duration (0.21)** and **Credit Amount (0.15)** exhibited positive relationships with credit risk. Demographic variables such as **Age** and **Job** showed comparatively weak relationships with credit risk.
+---
 # 🏦 Bank Customer Churn Analysis
 
 ## 🎯 Objective
