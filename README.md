@@ -14,6 +14,7 @@ This repository contains multiple EDA projects covering different domains such a
 Exploratory-Data-Analysis/
 │
 ├── German_Credit_Risk_Analysis.ipynb
+├── IBM_Telco_Customer_Churn_Analysis.ipynb
 ├── Hotel_Booking_Cancellation_Analysis.ipynb
 ├── Bank_Customer_Churn_Analysis.ipynb
 ├── HR_Analytics_Job_Change_Analysis.ipynb
@@ -26,6 +27,7 @@ Exploratory-Data-Analysis/
 │
 ├── datasets/
 │   ├── german_credit_data.csv
+│   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
 │   ├── hotel_bookings.csv
 │   ├── Bank_Churn.csv
 │   ├── aug_train.csv
@@ -38,9 +40,56 @@ Exploratory-Data-Analysis/
 │
 └── README.md
 ```
+
 ---
 
 # 📚 Projects Included
+---
+# 📊 IBM Telco Customer Churn Analysis
+
+## 🎯 Objective
+
+The objective of this project is to perform **Exploratory Data Analysis (EDA)** on the **IBM Telco Customer Churn** dataset to identify the key factors associated with customer churn. The analysis aims to uncover patterns in customer demographics, service subscriptions, contract types, pricing, and billing behavior to generate actionable business insights that can help telecom companies improve customer retention and reduce churn.
+
+---
+
+## 📊 Analysis Performed
+
+- Performed data understanding and dataset inspection.
+- Checked for missing values, duplicate records, and data types.
+- Converted the **TotalCharges** column to the appropriate numeric data type.
+- Created **Tenure Groups** and **Monthly Charges Groups** using feature binning for better analysis.
+- Performed descriptive statistical analysis of numerical variables.
+- Conducted **Univariate Analysis** to understand customer demographics, telecom services, billing information, and churn distribution.
+- Conducted **Bivariate Analysis** to examine relationships between customer churn and:
+  - Payment Method
+  - Contract Type
+  - Internet Service
+  - Online Security
+  - Tenure Group
+  - Gender
+  - Tech Support
+  - Monthly Charges Group
+- Performed supporting analyses to validate business hypotheses using:
+  - Payment Method vs Contract
+  - Internet Service vs Monthly Charges Group
+  - Contract vs Tenure Group
+  - Tech Support vs Contract
+- Conducted **Multivariate Analysis** using a correlation heatmap to identify relationships among numerical variables.
+- Derived business-focused insights and actionable recommendations based on the findings.
+
+---
+
+## 💡 Key Insights
+
+- Customers using **Electronic Check** experienced the highest churn rate, which was associated with the large proportion of customers on **Month-to-Month** contracts.
+- Customers subscribed to **Fiber Optic** internet services exhibited the highest churn rate, while customers without **Online Security** were significantly more likely to leave the company.
+- **New customers (0–12 months)** recorded the highest churn rate, whereas long-term customers demonstrated substantially stronger retention. Longer contract durations were associated with increased customer loyalty.
+- **Gender** showed minimal influence on customer churn, indicating that service-related factors are much more important than demographic characteristics.
+- Customers without **Tech Support** experienced significantly higher churn and were predominantly enrolled in **Month-to-Month** contracts, suggesting that both service quality and contract commitment are associated with customer retention.
+- Customers paying **higher monthly charges** were more likely to churn. Supporting analysis revealed that these customers were primarily subscribed to **Fiber Optic** internet plans, indicating that premium-priced services require stronger value propositions to improve customer retention.
+
+---
 
 # 📊 German Credit Risk Analysis
 
