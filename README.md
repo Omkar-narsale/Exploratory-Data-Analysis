@@ -14,6 +14,7 @@ This repository contains multiple EDA projects covering different domains such a
 Exploratory-Data-Analysis/
 │
 ├── German_Credit_Risk_Analysis.ipynb
+├── Loan_Approval_Prediction_Analysis.ipynb
 ├── IBM_Telco_Customer_Churn_Analysis.ipynb
 ├── Hotel_Booking_Cancellation_Analysis.ipynb
 ├── Bank_Customer_Churn_Analysis.ipynb
@@ -26,6 +27,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── loan_approval_dataset.csv
 │   ├── german_credit_data.csv
 │   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
 │   ├── hotel_bookings.csv
@@ -44,6 +46,50 @@ Exploratory-Data-Analysis/
 ---
 
 # 📚 Projects Included
+---
+# 🏦 Loan Approval Analysis
+
+## 🎯 Objective
+
+The objective of this project is to perform **Exploratory Data Analysis (EDA)** on a **Loan Approval** dataset to identify the key factors influencing loan approval decisions. The analysis focuses on understanding how applicant demographics, financial characteristics, credit history, loan attributes, and home ownership are associated with loan approval outcomes, providing actionable business insights that can support better lending decisions and effective credit risk management.
+
+---
+
+## 📊 Analysis Performed
+
+- Performed data understanding and dataset inspection.
+- Checked for missing values, duplicate records, and data types.
+- Created grouped features using feature binning for better business interpretation:
+  - Income Group
+  - Loan Amount Group
+  - Credit Score Group
+  - Experience Group
+  - Loan Percentage Group
+  - Interest Rate Group
+- Performed descriptive statistical analysis of numerical variables.
+- Conducted **Univariate Analysis** to understand applicant demographics, financial characteristics, loan attributes, and loan approval distribution.
+- Conducted **Bivariate Analysis** to examine relationships between loan approval and:
+  - Person Income
+  - Loan Intent
+  - Loan Percentage of Income
+  - Home Ownership
+- Performed supporting analyses to validate business hypotheses using:
+  - Income Group vs Loan Amount
+  - Loan Intent vs Loan Amount
+  - Loan Percentage of Income vs Income Group
+  - Home Ownership vs Income Group
+- Conducted **Multivariate Analysis** using a correlation heatmap to identify relationships among numerical variables.
+- Derived business-focused insights and actionable recommendations based on the findings.
+
+---
+
+## 💡 Key Insights
+
+- Applicants with **higher incomes** demonstrated significantly higher loan approval rates, while supporting analysis showed that higher-income applicants generally applied for larger loan amounts, indicating stronger repayment capacity.
+- **Loan Intent** influenced approval decisions, suggesting that the purpose of borrowing plays an important role in lending risk assessment.
+- Applicants with a **lower Loan Percentage of Income** experienced higher approval rates, while applicants with higher loan burdens were more likely to face rejection, highlighting the importance of affordability in lending decisions.
+- Applicants with **Mortgage** home ownership showed higher loan approval rates and were predominantly concentrated in higher income groups, indicating greater financial stability and lower perceived lending risk.
+- The correlation heatmap revealed that **financial variables**, including income, loan amount, loan percentage, credit history, and credit score, exhibited stronger relationships with loan approval than demographic characteristics, emphasizing that financial strength is the primary driver of lending decisions.
 ---
 # 📊 IBM Telco Customer Churn Analysis
 
