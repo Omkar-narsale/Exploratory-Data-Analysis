@@ -14,7 +14,8 @@ This repository contains multiple EDA projects covering different domains such a
 Exploratory-Data-Analysis/
 │
 ├── German_Credit_Risk_Analysis.ipynb
-├── Loan_Approval_Prediction_Analysis.ipynb
+├── Loan_Approval_Analysis.ipynb
+├── House_Price_Analysis.ipynb
 ├── IBM_Telco_Customer_Churn_Analysis.ipynb
 ├── Hotel_Booking_Cancellation_Analysis.ipynb
 ├── Bank_Customer_Churn_Analysis.ipynb
@@ -27,6 +28,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── house_prices_train.csv
 │   ├── loan_approval_dataset.csv
 │   ├── german_credit_data.csv
 │   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
@@ -46,6 +48,48 @@ Exploratory-Data-Analysis/
 ---
 
 # 📚 Projects Included
+---
+# 🏡 House Price Analysis
+
+## 🎯 Objective
+
+The objective of this project is to perform **Exploratory Data Analysis (EDA)** on a **House Price** dataset to identify the key factors influencing residential property prices. The analysis focuses on understanding how property characteristics, construction quality, neighborhood, house size, age, and garage facilities contribute to house values, providing actionable business insights that can help homebuyers, real estate investors, and property developers make informed decisions.
+
+---
+
+## 📊 Analysis Performed
+
+- Performed data understanding and dataset inspection.
+- Removed unnecessary columns with little analytical value or excessive missing values.
+- Checked for missing values, duplicate records, and data types.
+- Performed descriptive statistical analysis of numerical variables.
+- Conducted **Univariate Analysis** to understand the distribution of house characteristics, property features, and selling prices.
+- Conducted **Bivariate Analysis** to examine relationships between **Sale Price** and:
+  - Overall House Quality
+  - Neighborhood
+  - Number of Bedrooms
+  - Garage Area
+  - Year Built
+- Performed supporting analyses to validate business hypotheses using:
+  - Overall Quality vs Ground Living Area
+  - Neighborhood vs Overall Quality
+  - Bedrooms vs Ground Living Area
+  - Garage Area vs Ground Living Area
+  - Year Built vs Overall Quality
+- Conducted **Multivariate Analysis** using a correlation heatmap to identify relationships among key numerical variables.
+- Derived business-focused insights and actionable recommendations based on the findings.
+
+---
+
+## 💡 Key Insights
+
+- Houses with **higher overall construction quality** achieved significantly higher selling prices. Supporting analysis revealed that premium-quality homes also provided **larger living areas**, making them more attractive to buyers.
+- **Neighborhood** had a substantial influence on house prices. Premium neighborhoods generally contained houses with **higher construction quality**, contributing to their higher market values.
+- Houses with **more bedrooms** generally commanded higher selling prices because they also offered **larger living spaces**, increasing their functionality for families.
+- Properties with **larger garage areas** recorded higher average selling prices. Supporting analysis showed that larger garages were typically associated with **larger houses**, making them more desirable in the real estate market.
+- **Newer houses** generally sold at higher prices than older properties. Supporting analysis indicated that recently built homes also exhibited **higher overall construction quality**, reflecting modern designs and improved building standards.
+- The correlation heatmap confirmed that **Overall Quality, Ground Living Area, Garage Area, Garage Capacity, Total Basement Area, and Year Built** exhibited the strongest positive relationships with **Sale Price**, indicating that property quality, size, and age are the primary drivers of residential property values.
+
 ---
 # 🏦 Loan Approval Analysis
 
