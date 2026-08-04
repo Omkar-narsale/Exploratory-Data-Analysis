@@ -16,6 +16,7 @@ Exploratory-Data-Analysis/
 ├── German_Credit_Risk_Analysis.ipynb
 ├── Loan_Approval_Analysis.ipynb
 ├── House_Price_Analysis.ipynb
+├── Heart_Disease_Risk_Analysis.ipynb
 ├── IBM_Telco_Customer_Churn_Analysis.ipynb
 ├── Hotel_Booking_Cancellation_Analysis.ipynb
 ├── Bank_Customer_Churn_Analysis.ipynb
@@ -28,6 +29,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── heart.csv
 │   ├── house_prices_train.csv
 │   ├── loan_approval_dataset.csv
 │   ├── german_credit_data.csv
@@ -48,6 +50,61 @@ Exploratory-Data-Analysis/
 ---
 
 # 📚 Projects Included
+---
+# 🫀 Heart Disease Risk Analysis
+
+## 🎯 Objective
+
+The objective of this project is to perform **Exploratory Data Analysis (EDA)** on a **Heart Disease Risk** dataset to identify the key clinical factors associated with the presence of heart disease. The analysis focuses on understanding how patient demographics, symptoms, cardiovascular measurements, laboratory results, and exercise test indicators influence heart disease risk, providing actionable clinical insights that can assist cardiologists in patient risk assessment and early diagnosis.
+
+---
+
+## 📊 Analysis Performed
+
+- Performed data understanding and dataset inspection.
+- Checked for missing values, duplicate records, and data types.
+- Created grouped features using feature engineering and binning for better clinical interpretation:
+  - Age Group
+  - Cholesterol Group
+  - Oldpeak (ST Depression) Group
+- Performed descriptive statistical analysis of numerical variables.
+- Conducted **Univariate Analysis** to understand patient demographics, cardiovascular measurements, and heart disease distribution.
+- Conducted **Bivariate Analysis** to examine relationships between heart disease and:
+  - Age Group
+  - Chest Pain Type
+  - Cholesterol Level
+  - ST Depression (Oldpeak)
+- Performed supporting analyses to validate clinical hypotheses using:
+  - Age Group vs Resting Blood Pressure
+  - Chest Pain Type vs Maximum Heart Rate
+  - Age Group vs Average Cholesterol
+  - Oldpeak Group vs Maximum Heart Rate
+- Conducted **Multivariate Analysis** using a correlation heatmap to identify relationships among key clinical variables.
+- Derived clinically focused insights and dataset-specific observations based on the findings.
+
+---
+
+## 💡 Key Insights
+
+- The dataset indicated that **younger and middle-aged patients** recorded a higher proportion of heart disease cases than older age groups. Supporting analysis showed that **average resting blood pressure increased with age**, suggesting that blood pressure alone does not explain heart disease occurrence within this dataset.
+
+- **Chest Pain Type** emerged as one of the strongest clinical indicators. Patients with **Atypical Angina** and **Non-Anginal Pain** exhibited the highest prevalence of heart disease, while supporting analysis revealed that these groups also demonstrated higher average maximum heart rates during exercise testing.
+
+- Patients with **Borderline Cholesterol (200–240 mg/dL)** recorded the highest proportion of heart disease cases in this dataset. Supporting analysis showed that **average cholesterol levels increased steadily with age**, indicating that cholesterol should be interpreted alongside other cardiovascular risk factors rather than in isolation.
+
+- Patients with **Low ST Depression (Oldpeak)** exhibited the highest proportion of heart disease cases within the dataset. Supporting analysis demonstrated that **maximum heart rate decreased progressively as Oldpeak increased**, highlighting reduced exercise capacity among patients with greater ECG abnormalities.
+
+- The correlation heatmap revealed that **Maximum Heart Rate (thalach)**, **ST Depression (Oldpeak)**, and **Number of Major Vessels (ca)** exhibited stronger relationships with heart disease compared to several other clinical measurements, emphasizing that cardiovascular diagnosis depends on evaluating multiple physiological indicators rather than a single clinical measurement.
+
+---
+
+## 📝 Conclusion
+
+This exploratory analysis investigated the major demographic and clinical factors associated with heart disease using patient records from a cardiovascular dataset. The findings demonstrated that **Chest Pain Type**, **Maximum Heart Rate**, and **ST Depression (Oldpeak)** provided some of the most clinically meaningful insights for understanding heart disease risk within the sampled population.
+
+Several observations, including those related to **Age** and **Cholesterol**, differed from commonly reported medical trends. These differences are likely attributable to the relatively small sample size and the specific characteristics of the dataset. Therefore, the findings should be interpreted as **dataset-specific observations** rather than generalized medical conclusions.
+
+Overall, the analysis highlights that **heart disease diagnosis requires a comprehensive evaluation of multiple clinical indicators**, reinforcing the importance of combining patient symptoms, physiological measurements, laboratory findings, and exercise test results to support informed clinical decision-making.
 ---
 # 🏡 House Price Analysis
 
