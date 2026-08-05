@@ -17,6 +17,7 @@ Exploratory-Data-Analysis/
 ├── Loan_Approval_Analysis.ipynb
 ├── House_Price_Analysis.ipynb
 ├── Heart_Disease_Risk_Analysis.ipynb
+├── Automobile_Price_Analysis.ipynb
 ├── IBM_Telco_Customer_Churn_Analysis.ipynb
 ├── Hotel_Booking_Cancellation_Analysis.ipynb
 ├── Bank_Customer_Churn_Analysis.ipynb
@@ -29,6 +30,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── car_details.csv
 │   ├── heart.csv
 │   ├── house_prices_train.csv
 │   ├── loan_approval_dataset.csv
@@ -50,6 +52,49 @@ Exploratory-Data-Analysis/
 ---
 
 # 📚 Projects Included
+---
+# 🚗 Automobile Price Analysis
+
+## 🎯 Objective
+
+The objective of this project is to perform **Exploratory Data Analysis (EDA)** on a **Used Automobile Price** dataset to identify the key factors influencing vehicle resale prices. The analysis focuses on understanding how ownership history, transmission type, vehicle age, mileage, and fuel type contribute to used car prices, providing actionable business insights that can help used car dealers accurately value vehicles, maximize profits, and make informed purchasing decisions.
+
+---
+
+## 📊 Analysis Performed
+
+- Performed data understanding and dataset inspection.
+- Checked for missing values, duplicate records, and data types.
+- Created **Kilometers Driven Groups** using feature binning for better business interpretation.
+- Performed descriptive statistical analysis of numerical variables.
+- Conducted **Univariate Analysis** to understand vehicle characteristics, ownership patterns, fuel types, transmission types, and selling price distribution.
+- Conducted **Bivariate Analysis** to examine relationships between selling price and:
+  - Owner Type
+  - Transmission Type
+  - Kilometers Driven
+  - Fuel Type
+- Performed supporting analyses to validate business hypotheses using:
+  - Owner Type vs Kilometers Driven
+  - Transmission Type vs Manufacturing Year
+  - Kilometers Driven vs Manufacturing Year
+  - Fuel Type vs Manufacturing Year
+- Conducted **Multivariate Analysis** using a correlation heatmap to identify relationships among the numerical variables.
+- Derived business-focused insights and practical pricing recommendations based on the findings.
+
+---
+
+## 💡 Key Insights
+
+- **First Owner** vehicles achieved significantly higher average selling prices than cars with multiple previous owners. Supporting analysis showed that first-owner vehicles also had considerably lower average mileage, indicating better vehicle condition and stronger resale value.
+
+- **Automatic transmission** vehicles commanded substantially higher selling prices than manual vehicles. Supporting analysis revealed that automatic cars were generally newer models, suggesting that modern technology and improved driving comfort contribute to higher resale values.
+
+- Vehicles with **lower mileage** retained significantly higher resale prices than heavily driven cars. Supporting analysis showed that low-mileage vehicles were also newer on average, demonstrating that vehicle age and usage together play a major role in determining resale value.
+
+- **Diesel** vehicles recorded the highest average selling prices in this dataset. Supporting analysis indicated that diesel vehicles were generally newer than most other fuel types, contributing to their stronger resale performance and market demand.
+
+- The correlation heatmap confirmed that **Manufacturing Year** and **Kilometers Driven** exhibited the strongest relationships with selling price, indicating that vehicle age and usage are the primary numerical factors influencing used car values.
+
 ---
 # 🫀 Heart Disease Risk Analysis
 
@@ -96,15 +141,6 @@ The objective of this project is to perform **Exploratory Data Analysis (EDA)** 
 
 - The correlation heatmap revealed that **Maximum Heart Rate (thalach)**, **ST Depression (Oldpeak)**, and **Number of Major Vessels (ca)** exhibited stronger relationships with heart disease compared to several other clinical measurements, emphasizing that cardiovascular diagnosis depends on evaluating multiple physiological indicators rather than a single clinical measurement.
 
----
-
-## 📝 Conclusion
-
-This exploratory analysis investigated the major demographic and clinical factors associated with heart disease using patient records from a cardiovascular dataset. The findings demonstrated that **Chest Pain Type**, **Maximum Heart Rate**, and **ST Depression (Oldpeak)** provided some of the most clinically meaningful insights for understanding heart disease risk within the sampled population.
-
-Several observations, including those related to **Age** and **Cholesterol**, differed from commonly reported medical trends. These differences are likely attributable to the relatively small sample size and the specific characteristics of the dataset. Therefore, the findings should be interpreted as **dataset-specific observations** rather than generalized medical conclusions.
-
-Overall, the analysis highlights that **heart disease diagnosis requires a comprehensive evaluation of multiple clinical indicators**, reinforcing the importance of combining patient symptoms, physiological measurements, laboratory findings, and exercise test results to support informed clinical decision-making.
 ---
 # 🏡 House Price Analysis
 
