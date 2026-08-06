@@ -18,6 +18,7 @@ Exploratory-Data-Analysis/
 ├── House_Price_Analysis.ipynb
 ├── Heart_Disease_Risk_Analysis.ipynb
 ├── Automobile_Price_Analysis.ipynb
+├── Credit_Card_Fraud_Detection_Analysis.ipynb
 ├── IBM_Telco_Customer_Churn_Analysis.ipynb
 ├── Hotel_Booking_Cancellation_Analysis.ipynb
 ├── Bank_Customer_Churn_Analysis.ipynb
@@ -30,6 +31,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── fraudTrain.csv
 │   ├── car_details.csv
 │   ├── heart.csv
 │   ├── house_prices_train.csv
@@ -52,6 +54,53 @@ Exploratory-Data-Analysis/
 ---
 
 # 📚 Projects Included
+---
+# 💳 Credit Card Fraud Detection Analysis
+
+## 🎯 Objective
+
+The objective of this project is to perform **Exploratory Data Analysis (EDA)** on a **Credit Card Fraud Detection** dataset to identify the key factors associated with fraudulent credit card transactions. The analysis focuses on understanding how merchant categories, occupations, geographical regions, transaction timing, merchant behavior, and transaction amounts influence fraud occurrence, providing actionable business insights that can help financial institutions strengthen fraud detection systems and minimize financial losses.
+
+---
+
+## 📊 Analysis Performed
+
+- Performed data understanding and dataset inspection.
+- Checked for missing values, duplicate records, and data types.
+- Converted the **Transaction Date & Time** column into a datetime format.
+- Performed **Feature Engineering** by extracting the **Transaction Hour** from the transaction timestamp.
+- Performed descriptive statistical analysis of numerical variables.
+- Conducted **Univariate Analysis** to understand transaction amounts, merchant categories, customer demographics, merchant distribution, and fraud distribution.
+- Conducted **Bivariate Analysis** to examine relationships between fraud and:
+  - Merchant Category
+  - Customer Occupation
+  - State
+  - Transaction Hour
+  - Merchant
+- Performed supporting analyses to validate business hypotheses using:
+  - Merchant Category vs Average Transaction Amount
+  - Occupation vs Merchant Category
+  - State vs Average Transaction Amount
+  - Transaction Hour vs Average Transaction Amount
+  - Merchant vs Average Transaction Amount
+- Conducted **Multivariate Analysis** using a correlation heatmap to identify relationships among numerical variables.
+- Derived business-focused insights and practical recommendations for fraud prevention.
+
+---
+
+## 💡 Key Insights
+
+- Fraud occurrence varied across **merchant categories**, indicating that certain categories experienced higher fraud percentages than others. Supporting analysis showed that these categories were also associated with relatively higher average transaction amounts, making them important targets for enhanced fraud monitoring.
+
+- Fraud percentages differed across **customer occupations**. Supporting analysis revealed that fraudulent transactions occurred across multiple merchant categories, suggesting that occupation alone is not sufficient to explain fraud and should be analyzed together with transaction behavior.
+
+- Fraud distribution varied across **states**, with some states recording higher observed fraud percentages than others. Supporting analysis showed that several of these states also exhibited higher average transaction amounts, helping financial institutions prioritize regional fraud monitoring and investigation.
+
+- **Late-night transactions**, particularly between **10:00 PM and 11:00 PM**, recorded the highest fraud percentages. Supporting analysis showed that these hours also had the highest average transaction amounts, indicating that fraudsters may target high-value transactions during periods when customers are less likely to detect unauthorized activity.
+
+- Certain **merchants** consistently recorded higher fraud percentages than others. Supporting analysis demonstrated that these merchants also processed relatively higher-value transactions, enabling banks to identify high-risk merchants and implement merchant-specific fraud detection strategies.
+
+- The correlation heatmap showed that **transaction amount, transaction time, customer location, merchant location, and city population** exhibit varying relationships with one another. The analysis further indicated that **credit card fraud is influenced by multiple behavioral and transactional factors rather than a single numerical feature**, emphasizing the importance of combining several variables when building fraud detection systems.
 ---
 # 🚗 Automobile Price Analysis
 
