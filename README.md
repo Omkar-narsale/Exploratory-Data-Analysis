@@ -19,6 +19,7 @@ Exploratory-Data-Analysis/
 ├── Heart_Disease_Risk_Analysis.ipynb
 ├── Automobile_Price_Analysis.ipynb
 ├── Credit_Card_Fraud_Detection_Analysis.ipynb
+├── IMDb_Movies_Analysis.ipynb
 ├── IBM_Telco_Customer_Churn_Analysis.ipynb
 ├── Hotel_Booking_Cancellation_Analysis.ipynb
 ├── Bank_Customer_Churn_Analysis.ipynb
@@ -31,6 +32,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── imdb_movies.xlsx
 │   ├── fraudTrain.csv
 │   ├── car_details.csv
 │   ├── heart.csv
@@ -55,6 +57,54 @@ Exploratory-Data-Analysis/
 
 # 📚 Projects Included
 ---
+# 🎬 IMDb Movies Analysis
+
+## 🎯 Objective
+
+The objective of this project is to perform **Exploratory Data Analysis (EDA)** on the IMDb Movies dataset to identify the key factors influencing movie popularity, audience ratings, critic reviews, and commercial success. The analysis focuses on understanding how genres, directors, cast members, release decades, and box-office revenue contribute to movie performance, providing actionable business insights for movie production companies, streaming platforms, and entertainment businesses.
+
+---
+
+## 📊 Analysis Performed
+
+- Performed dataset inspection and data understanding.
+- Checked for missing values, duplicate records, and data types.
+- Cleaned and preprocessed the dataset for analysis.
+- Performed descriptive statistical analysis of numerical variables.
+- Conducted Univariate Analysis to understand the distribution of movie characteristics.
+- Conducted Bivariate Analysis to examine relationships between:
+  - Genre vs IMDb Rating
+  - Cast Members vs IMDb Rating
+  - Gross Revenue vs IMDb Rating
+  - Release Decade vs IMDb Rating
+  - Director vs IMDb Rating
+- Performed supporting analyses using:
+  - Genre vs Movie Count
+  - Cast Members vs Number of Movies
+  - Gross Revenue vs Number of Votes
+  - Release Decade vs Meta Score
+  - Director vs Number of Movies
+- Conducted Correlation Analysis using a Heatmap to identify relationships among Runtime, IMDb Rating, Meta Score, Number of Votes, and Gross Revenue.
+- Derived business-focused insights and actionable recommendations.
+
+---
+
+## 💡 Key Insights
+
+- **Drama** emerged as the most common movie genre while maintaining consistently strong IMDb ratings, highlighting its long-term popularity among audiences.
+
+- Frequently appearing **actors** consistently appeared in highly rated movies, suggesting that experienced cast members contribute to maintaining film quality, although appearing in more movies does not always result in the highest ratings.
+
+- Movies with **higher box-office revenue** attracted significantly more audience votes, demonstrating that commercial success is strongly associated with audience reach and popularity rather than dramatically higher IMDb ratings.
+
+- Movies released during the **1930s, 1940s, and 1950s** received the highest average IMDb ratings and Meta Scores, indicating that classic films continue to be appreciated by both audiences and critics.
+
+- **Experienced directors**, including Steven Spielberg, Martin Scorsese, Christopher Nolan, and Quentin Tarantino, consistently maintained high IMDb ratings across their filmographies, highlighting the importance of experienced filmmakers in delivering quality cinema.
+
+- The correlation heatmap confirmed that **Gross Revenue** has the strongest positive relationship with **Number of Votes**, while **IMDb Rating** and **Meta Score** also exhibit a positive correlation, suggesting that audience appreciation and critic reviews generally align for successful movies.
+
+---
+
 # 💳 Credit Card Fraud Detection Analysis
 
 ## 🎯 Objective
