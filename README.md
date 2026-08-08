@@ -20,6 +20,7 @@ Exploratory-Data-Analysis/
 ├── Automobile_Price_Analysis.ipynb
 ├── Credit_Card_Fraud_Detection_Analysis.ipynb
 ├── IMDb_Movies_Analysis.ipynb
+├── Student_Performance_Analysis.ipynb
 ├── IBM_Telco_Customer_Churn_Analysis.ipynb
 ├── Hotel_Booking_Cancellation_Analysis.ipynb
 ├── Bank_Customer_Churn_Analysis.ipynb
@@ -32,6 +33,7 @@ Exploratory-Data-Analysis/
 ├── Wine_Quality_Analysis.ipynb
 │
 ├── datasets/
+│   ├── student_performance.csv
 │   ├── imdb_movies.xlsx
 │   ├── fraudTrain.csv
 │   ├── car_details.csv
@@ -56,6 +58,36 @@ Exploratory-Data-Analysis/
 ---
 
 # 📚 Projects Included
+---
+# 🎓 Student Performance Analysis — Exploratory Data Analysis
+
+## 🎯 Objective
+
+The objective of this project is to analyze student academic performance and identify how factors such as study time, attendance, internet access, part-time employment, parental education, extracurricular activities, and gender are associated with students' final academic outcomes.
+
+## 🔍 Analysis Performed
+
+- Study Time vs Final Grade
+- Attendance Percentage vs Final Grade
+- Extracurricular Activities vs Final Exam Score
+- Part-Time Job vs Final Exam Score
+- Part-Time Job vs Parental Education
+- Internet Access vs Final Exam Score
+- Internet Access vs Previous Grade
+- Gender vs Final Exam Score
+- Gender vs Study Time
+- Correlation Heatmap of Student Performance Factors
+
+## 💡 Key Insights
+
+- Students with **90–100% attendance** achieved an average final grade of **4.07**, compared with **2.62** for students below 60% attendance.
+- Students **without part-time jobs** achieved a higher average final exam score (**84.58**) compared with students with part-time jobs (**81.29**).
+- Students with **internet access** achieved an average final exam score of **84.28**, compared with **79.26** for students without internet access.
+- The internet-access group had a slightly lower average previous grade (**69.58**) than the no-internet group (**70.67**), despite achieving a higher final exam score.
+- Extracurricular activities showed only a **very small difference** in final exam scores, indicating that participation was not a major differentiating factor in this dataset.
+- **Gender showed almost no difference** in academic performance: female students averaged **83.61** while male students averaged **83.48**.
+- Study time was also nearly identical between genders (**3.56 hours** for females vs **3.58 hours** for males).
+- The correlation heatmap was used to identify relationships among study time, attendance, sleep, previous grade, final exam score, and final grade.
 ---
 # 🎬 IMDb Movies Analysis
 
